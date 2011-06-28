@@ -1,0 +1,638 @@
+THyvesApiLibrary
+v3
+r1
+cCheck dependencies
+cProcessPCH /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch.gch HyvesApiLibrary_Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
+cProcessPCH /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch.gch HyvesApiLibrary_Prefix.pch normal armv7 c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/Base64Transcoder.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c normal armv7 c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICall.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPILayer.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BatchedAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary+HyvesApi.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/MalformedResponseException.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LogoutAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LockedThread.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesVisibility.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BuzzTypes.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesRespectType.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthRequestTokenAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthAccessTokenAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthorizationViewController.o /Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner_Extensions.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary_JSONExtensions.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONDeserializer.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONScanner.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONSerializer.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cLibtool /Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/libHyvesApiLibrary.a normal armv7
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
+c000000004E065FB90000000000000110
+t1309040569
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004DFEB0490000000000320110
+t1308536905
+s3277072
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004DFEB0830000000000516F10
+t1308536963
+s5336848
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m
+c000000004E0998C70000000000000BF8
+t1309251783
+s3064
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m
+c000000004E0998B60000000000000B7A
+t1309251766
+s2938
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m
+c000000004E09989B0000000000000631
+t1309251739
+s1585
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m
+c000000004E09996C0000000000002306
+t1309251948
+s8966
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m
+c000000004E09997D0000000000002676
+t1309251965
+s9846
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m
+c000000004E09995D0000000000005CAD
+t1309251933
+s23725
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.m
+c000000004E09994A0000000000001C60
+t1309251914
+s7264
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c
+c000000004D83B6D80000000000002996
+t1300477656
+s10646
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m
+c000000004E0995CD00000000000017E3
+t1309251021
+s6115
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m
+c000000004E0995410000000000000572
+t1309250881
+s1394
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m
+c000000004E0996010000000000000E03
+t1309251073
+s3587
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m
+c000000004E09976F000000000000063B
+t1309251439
+s1595
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m
+c000000004E09987100000000000005B0
+t1309251697
+s1456
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m
+c000000004E0998000000000000000D06
+t1309251584
+s3334
+
+N/Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m
+c000000004E0994B70000000000002744
+t1309250743
+s10052
+
+N/Users/sergey/github/HyvesApiLibrary/HyvesApiLibrary_Prefix.pch
+c000000004D83B6D800000000000000BC
+t1300477656
+s188
+
+N/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/libHyvesApiLibrary.a
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthAccessTokenAPICallHandler.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthRequestTokenAPICallHandler.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthorizationViewController.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/Base64Transcoder.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BatchedAPICallHandler.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BuzzTypes.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner_Extensions.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONDeserializer.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONScanner.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONSerializer.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICall.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICallHandler.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPILayer.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesApiLibrary.LinkFileList
+c000000004E09A6E00000000000000BDE
+t1309255392
+s3038
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesRespectType.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesVisibility.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LockedThread.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LogoutAPICallHandler.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/MalformedResponseException.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary+HyvesApi.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary_JSONExtensions.o
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch.gch
+t2
+s0
+
+N/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch.gch
+t2
+s0
+
+N/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m
+c000000004E09A18B00000000000020A7
+t1309254027
+s8359
+
+N/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m
+c000000004E09A18B0000000000001305
+t1309254027
+s4869
+
+N/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m
+c000000004E09A18B0000000000000703
+t1309254027
+s1795
+
+N/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m
+c000000004E09A18B0000000000001070
+t1309254027
+s4208
+
+N/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m
+c000000004E09A18B000000000000621C
+t1309254027
+s25116
+
+N/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m
+c000000004E09A18B00000000000027C0
+t1309254027
+s10176
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m
+r0
+
+CBuild AST from /Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m
+r0
+
+CBuild AST from /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m
+r0
+
+CBuild AST from /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m
+r0
+
+CBuild AST from /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m
+r0
+
+CBuild AST from /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m
+r0
+
+CBuild AST from /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m
+r0
+
+CBuild AST from /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6308c860deb9b341^25adf860deb9b341^---0#1#0#--18"Check dependencies
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthAccessTokenAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.077643
+e330948195.198428
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthAccessTokenAPICallHandler.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.ma3201863deb9b341^16fc3263deb9b341^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m0000000000000000^2324"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthAccessTokenAPICallHandler.o Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthAccessTokenAPICallHandler.d -c /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthAccessTokenAPICallHandler.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthAccessTokenAPICallHandler.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthRequestTokenAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.931177
+e330948195.198714
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthRequestTokenAPICallHandler.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m6781ee62deb9b341^54013363deb9b341^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m0000000000000000^2329"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthRequestTokenAPICallHandler.o Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthRequestTokenAPICallHandler.d -c /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/AuthRequestTokenAPICallHandler.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthRequestTokenAPICallHandler.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthorizationViewController.o /Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.200971
+e330948195.558268
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthorizationViewController.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m00903363deb9b341^05fc8e63deb9b341^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m0000000000000000^2304"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthorizationViewController.o Classes/ViewControllers/AuthorizationViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthorizationViewController.d -c /Users/sergey/github/HyvesApiLibrary/Classes/ViewControllers/AuthorizationViewController.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/AuthorizationViewController.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/Base64Transcoder.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c normal armv7 c com.apple.compilers.llvmgcc42
+s330948193.288836
+e330948193.535897
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/Base64Transcoder.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c6b104a61deb9b341^193b8961deb9b341^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c0000000000000000^2225"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/Base64Transcoder.o Classes/HelperClasses/Base64Transcoder.c normal armv7 c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/Base64Transcoder.d -c /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/Base64Transcoder.c -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/Base64Transcoder.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BatchedAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.486314
+e330948194.599672
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BatchedAPICallHandler.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m289d7c62deb9b341^77829962deb9b341^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m0000000000000000^2284"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BatchedAPICallHandler.o Classes/APILayer/BaseClasses/BatchedAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BatchedAPICallHandler.d -c /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/BatchedAPICallHandler.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BatchedAPICallHandler.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BuzzTypes.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.823162
+e330948194.929820
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BuzzTypes.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m5ad9d262deb9b341^3e07ee62deb9b341^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m0000000000000000^2210"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BuzzTypes.o Classes/HelperClasses/BuzzTypes.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BuzzTypes.d -c /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/BuzzTypes.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/BuzzTypes.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.201880
+e330948195.345202
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner.o
+x/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m6dc83363deb9b341^c85d5863deb9b341^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m0000000000000000^2266"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner.d -c /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/CDataScanner.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner_Extensions.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.346544
+e330948195.428474
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner_Extensions.o
+x/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.mccd45863deb9b341^d5ae6d63deb9b341^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m0000000000000000^2343"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner_Extensions.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner_Extensions.d -c /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/CDataScanner_Extensions.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CDataScanner_Extensions.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONDeserializer.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.498561
+e330948195.590365
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONDeserializer.o
+x/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m98be7f63deb9b341^b8209763deb9b341^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m0000000000000000^2301"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONDeserializer.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONDeserializer.d -c /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONDeserializer.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONDeserializer.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONScanner.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.559607
+e330948195.742940
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONScanner.o
+x/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m915f8f63deb9b341^fd30be63deb9b341^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m0000000000000000^2276"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONScanner.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONScanner.d -c /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONScanner.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONScanner.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONSerializer.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.591762
+e330948195.702593
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONSerializer.o
+x/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m179e9763deb9b341^f9dab363deb9b341^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m0000000000000000^2291"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONSerializer.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONSerializer.d -c /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/JSON/CJSONSerializer.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/CJSONSerializer.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICall.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.129404
+e330948194.326038
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICall.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m56442162deb9b341^0c765362deb9b341^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m0000000000000000^2239"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICall.o Classes/APILayer/BaseClasses/HyvesAPICall.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICall.d -c /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICall.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICall.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.129399
+e330948194.615671
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICallHandler.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m7c432162deb9b341^5f9b9d62deb9b341^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m0000000000000000^2274"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICallHandler.o Classes/APILayer/BaseClasses/HyvesAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICallHandler.d -c /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPICallHandler.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPICallHandler.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPILayer.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.327395
+e330948194.484625
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPILayer.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.mabec5362deb9b341^e00e7c62deb9b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.m0000000000000000^2244"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPILayer.o Classes/APILayer/BaseClasses/HyvesAPILayer.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPILayer.d -c /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/BaseClasses/HyvesAPILayer.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesAPILayer.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesRespectType.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.884235
+e330948194.939639
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesRespectType.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m897de262deb9b341^9c8af062deb9b341^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m0000000000000000^2245"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesRespectType.o Classes/HelperClasses/HyvesRespectType.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesRespectType.d -c /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesRespectType.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesRespectType.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesVisibility.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.804050
+e330948194.881996
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesVisibility.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m12f6cd62deb9b341^a8c8e162deb9b341^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m0000000000000000^2240"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesVisibility.o Classes/HelperClasses/HyvesVisibility.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesVisibility.d -c /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/HyvesVisibility.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesVisibility.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LockedThread.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.739367
+e330948194.821813
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LockedThread.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m2c65bd62deb9b341^2861d262deb9b341^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m0000000000000000^2225"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LockedThread.o Classes/HelperClasses/LockedThread.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LockedThread.d -c /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/LockedThread.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LockedThread.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LogoutAPICallHandler.o /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.698248
+e330948194.802711
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LogoutAPICallHandler.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m6edcb262deb9b341^508fcd62deb9b341^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m0000000000000000^2279"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LogoutAPICallHandler.o Classes/APILayer/APIHandlers/LogoutAPICallHandler.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LogoutAPICallHandler.d -c /Users/sergey/github/HyvesApiLibrary/Classes/APILayer/APIHandlers/LogoutAPICallHandler.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/LogoutAPICallHandler.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/MalformedResponseException.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.617587
+e330948194.696896
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/MalformedResponseException.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m97389e62deb9b341^6267b262deb9b341^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m0000000000000000^2295"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/MalformedResponseException.o Classes/HelperClasses/MalformedResponseException.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/MalformedResponseException.d -c /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/MalformedResponseException.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/MalformedResponseException.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary+HyvesApi.o /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948194.600997
+e330948194.738047
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary+HyvesApi.o
+x/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m4a429a62deb9b341^b1fdbc62deb9b341^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m0000000000000000^2270"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary+HyvesApi.o Classes/HelperClasses/NSDictionary+HyvesApi.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary+HyvesApi.d -c /Users/sergey/github/HyvesApiLibrary/Classes/HelperClasses/NSDictionary+HyvesApi.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary+HyvesApi.o
+
+CCompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary_JSONExtensions.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948195.429797
+e330948195.497227
+r1
+xCompileC
+xbuild/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary_JSONExtensions.o
+x/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m46246e63deb9b341^b2487f63deb9b341^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m0000000000000000^2363"CompileC build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary_JSONExtensions.o /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -include /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary_JSONExtensions.d -c /Users/sergey/github/TouchJSON/Source/../../TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/NSDictionary_JSONExtensions.o
+
+CLibtool /Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/libHyvesApiLibrary.a normal armv7
+s330948195.749905
+e330948195.808744
+r1
+xLibtool
+x/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/libHyvesApiLibrary.a
+xnormal
+xarmv7
+o/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Libtool build/Debug-iphoneos/libHyvesApiLibrary.a normal armv7f910c063deb9b341^5708cf63deb9b341^---0#0#0#--802"Libtool build/Debug-iphoneos/libHyvesApiLibrary.a normal armv7    cd /Users/sergey/github/HyvesApiLibrary    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/libtool -static -arch_only armv7 -syslibroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -filelist /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/Objects-normal/armv7/HyvesApiLibrary.LinkFileList -ObjC -framework Foundation -framework CFNetwork -o /Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/libHyvesApiLibrary.a
+
+CProcessPCH /Users/sergey/Library/Developer/Xcode/DerivedData/HyvesApiLibrary-evdoirgahenxkwftxhbaxeqdsgsi/Index/PrecompiledHeaders/HyvesApiLibrary_Prefix-ebdxsfzvffjhflahhnjajskvmaqt_ast/HyvesApiLibrary_Prefix.pch.pth HyvesApiLibrary_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/sergey/Library/Developer/Xcode/DerivedData/HyvesApiLibrary-evdoirgahenxkwftxhbaxeqdsgsi/Index/PrecompiledHeaders/HyvesApiLibrary_Prefix-gfxskhqsiddkzidntrnixkvbgxdq_ast/HyvesApiLibrary_Prefix.pch.pth HyvesApiLibrary_Prefix.pch normal armv7 c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch.gch HyvesApiLibrary_Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
+s330948192.972334
+e330948194.121869
+r1
+xProcessPCH
+x/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch.gch
+xHyvesApiLibrary_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile HyvesApiLibrary_Prefix.pch3909f960deb9b341^1a311f62deb9b341^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/sergey/github/HyvesApiLibrary/HyvesApiLibrary_Prefix.pch0000000000000000^2045"ProcessPCH build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch.gch HyvesApiLibrary_Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -c /Users/sergey/github/HyvesApiLibrary/HyvesApiLibrary_Prefix.pch -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch.gch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-csqzsemaojsppkeoyihmstrjcuww/HyvesApiLibrary_Prefix.pch.d
+
+CProcessPCH /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch.gch HyvesApiLibrary_Prefix.pch normal armv7 c com.apple.compilers.llvmgcc42
+s330948192.972455
+e330948193.280300
+r1
+xProcessPCH
+x/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch.gch
+xHyvesApiLibrary_Prefix.pch
+xnormal
+xarmv7
+xc
+xcom.apple.compilers.llvmgcc42
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile HyvesApiLibrary_Prefix.pch4a09f960deb9b341^5dc04761deb9b341^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/sergey/github/HyvesApiLibrary/HyvesApiLibrary_Prefix.pch0000000000000000^2025"ProcessPCH build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch.gch HyvesApiLibrary_Prefix.pch normal armv7 c com.apple.compilers.llvmgcc42    cd /Users/sergey/github/HyvesApiLibrary    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-generated-files.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-own-target-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-all-target-headers.hmap -iquote /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/HyvesApiLibrary-project-headers.hmap -I/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos/include -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources/armv7 -I/Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary.build/Debug-iphoneos/HyvesApiLibrary.build/DerivedSources -F/Users/sergey/github/HyvesApiLibrary/build/Debug-iphoneos -c /Users/sergey/github/HyvesApiLibrary/HyvesApiLibrary_Prefix.pch -o /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch.gch -MMD -MT dependencies -MF /Users/sergey/github/HyvesApiLibrary/build/HyvesApiLibrary_Prefix-ezcgbpixwrizsicimirdpvswhhep/HyvesApiLibrary_Prefix.pch.d
+
