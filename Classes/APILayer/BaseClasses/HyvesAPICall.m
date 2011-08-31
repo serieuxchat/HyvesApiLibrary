@@ -51,6 +51,7 @@ static NSInteger timeDifference = 0;
 
 
 @implementation HyvesAPICall
+@synthesize appliedTimeDifference;
 
 + (void)setTimeDifference:(NSInteger)aTimeDifference
 {
@@ -138,7 +139,14 @@ static NSInteger timeDifference = 0;
         [oAuthParameters setObject:oauthTokenKey forKey:@"oauth_token"];
     }
     
-    NSInteger timeStamp = time(NULL) + timeDifference;
+    NSInteger currentTimeStamp = time(NULL);
+    
+    // Needs to be saved to compute the next global time difference.
+    appliedTimeDifference = timeDifference;
+    
+    NSInteger timeStamp = currentTimeStamp + appliedTimeDifference;
+    // NSLog(@"Adjusting time stamp from %d to %d with difference: %d", currentTimeStamp, timeStamp, timeDifference);
+    
     [oAuthParameters setObject:[NSString stringWithFormat:@"%d", timeStamp] forKey:@"oauth_timestamp"];
     
     NSMutableDictionary *signatureParameters = [NSMutableDictionary dictionaryWithDictionary:parameters];

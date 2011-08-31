@@ -26,6 +26,56 @@
 
 #define HYVES_API_ERROR_DOMAIN @"HyvesApi"
 
+/*
+ kCFURLErrorUnknown = -998,
+ kCFURLErrorCancelled = -999,
+ kCFURLErrorBadURL = -1000,
+ kCFURLErrorTimedOut = -1001,
+ kCFURLErrorUnsupportedURL = -1002,
+ kCFURLErrorCannotFindHost = -1003,
+ kCFURLErrorCannotConnectToHost = -1004,
+ kCFURLErrorNetworkConnectionLost = -1005,
+ kCFURLErrorDNSLookupFailed = -1006,
+ kCFURLErrorHTTPTooManyRedirects = -1007,
+ kCFURLErrorResourceUnavailable = -1008,
+ kCFURLErrorNotConnectedToInternet = -1009,
+ kCFURLErrorRedirectToNonExistentLocation = -1010,
+ kCFURLErrorBadServerResponse = -1011,
+ kCFURLErrorUserCancelledAuthentication = -1012,
+ kCFURLErrorUserAuthenticationRequired = -1013,
+ kCFURLErrorZeroByteResource = -1014,
+ kCFURLErrorCannotDecodeRawData = -1015,
+ kCFURLErrorCannotDecodeContentData = -1016,
+ kCFURLErrorCannotParseResponse = -1017,
+ kCFURLErrorInternationalRoamingOff = -1018,
+ kCFURLErrorCallIsActive = -1019,
+ kCFURLErrorDataNotAllowed = -1020,
+ kCFURLErrorRequestBodyStreamExhausted = -1021,
+ kCFURLErrorFileDoesNotExist = -1100,
+ kCFURLErrorFileIsDirectory = -1101,
+ kCFURLErrorNoPermissionsToReadFile = -1102,
+ kCFURLErrorDataLengthExceedsMaximum = -1103,
+ // SSL errors
+ kCFURLErrorSecureConnectionFailed = -1200,
+ kCFURLErrorServerCertificateHasBadDate = -1201,
+ kCFURLErrorServerCertificateUntrusted = -1202,
+ kCFURLErrorServerCertificateHasUnknownRoot = -1203,
+ kCFURLErrorServerCertificateNotYetValid = -1204,
+ kCFURLErrorClientCertificateRejected = -1205,
+ kCFURLErrorClientCertificateRequired = -1206,
+ kCFURLErrorCannotLoadFromNetwork = -2000,
+ // Download and file I/O errors
+ kCFURLErrorCannotCreateFile = -3000,
+ kCFURLErrorCannotOpenFile = -3001,
+ kCFURLErrorCannotCloseFile = -3002,
+ kCFURLErrorCannotWriteToFile = -3003,
+ kCFURLErrorCannotRemoveFile = -3004,
+ kCFURLErrorCannotMoveFile = -3005,
+ kCFURLErrorDownloadDecodingFailedMidStream = -3006,
+ kCFURLErrorDownloadDecodingFailedToComplete = -3007,
+ 
+*/ 
+
 // Some frequently used result/error codes (mostly API error codes)
 typedef enum
 {
@@ -86,6 +136,7 @@ typedef enum
     
     API_ERROR_NO_ACCESS = 101,
     API_ERROR_NOT_VISIBLE = 103,
+    API_ERROR_NOT_WRITABLE = 104,
     API_ERROR_DUPLICATE_CREATION = 1011,
     API_ERROR_SUBSCRIBE_ON_WEBSITE = 1025,
     API_ERROR_ILLEGAL_SEARCHTERMS = 1031,
@@ -165,7 +216,7 @@ HyvesAPIErrorCode;
 @property(readonly) NSThread*               callerThread;
 @property(readonly) NSThread*               apiThread;
 @property(readonly) BOOL                    secure;
-@property(retain) NSMutableDictionary*      parameters;
+@property(copy) NSMutableDictionary*        parameters;
 @property(assign)   BOOL                    canceled;
 
 
@@ -198,6 +249,9 @@ HyvesAPIErrorCode;
 // Use with caution!
 -(void)cancel;
 
+-(BOOL)reAuthenticateNeeded:(NSError*)aError;
+
+
 // Get the page number from an API response (if available).
 // The response must NOT be a batched response, but an individual API response.
 // E.g. for users.get, it would be the content under users_get_result (excluding users_get_result itself).
@@ -215,6 +269,8 @@ HyvesAPIErrorCode;
 +(NSUInteger)totalResultsFromResponse:(NSDictionary*)aResponse;
 +(NSInteger)timeStampDifferenceFromResponse:(NSDictionary*)aResponse;
 
+// Can be overridden to display more info for batched methods.
+-(NSString*)apiMethodInfo;
 
 @end
 

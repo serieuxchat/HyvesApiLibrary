@@ -22,7 +22,10 @@
 @interface HyvesAPICall : NSMutableURLRequest 
 {
     BOOL secureConnection;
+    NSInteger appliedTimeDifference;
 }
+
+@property(assign) NSInteger appliedTimeDifference;
 
 - (id)initWithHyvesApiMethod:(NSString*)method parameters:(NSDictionary*)parameters secureConnection:(BOOL)secure;
 

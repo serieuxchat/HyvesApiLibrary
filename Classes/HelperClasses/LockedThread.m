@@ -21,16 +21,25 @@
 
 #import "LockedThread.h"
 
-@implementation LockedThread
-@synthesize lock;
+@implementation ThreadDoneCondition
+@synthesize threadDone;
 
--(NSLock*)lock
+@end
+
+
+@implementation LockedThread
+@synthesize doneCondition;
+
+-(ThreadDoneCondition*)doneCondition
 {
-    if (lock == nil)
+    @synchronized(self)
+{
+        if (doneCondition == nil)
     {
-        lock = [[NSLock alloc] init];
+            doneCondition = [[ThreadDoneCondition alloc] init];
+        }
+        return doneCondition;
     }
-    return lock;
 }
 
 -(id)retain
@@ -48,8 +57,12 @@
     // NSLog(@"LockedThread::dealloc");
     
     // Unblock the main thread.
-    [lock unlock];
-    [lock release];
+    [doneCondition lock];
+    doneCondition.threadDone = YES;
+    [doneCondition signal];
+    [doneCondition unlock];
+    [doneCondition release];
+    
     [super dealloc];
 }
 

@@ -21,13 +21,22 @@
 
 #import <Foundation/Foundation.h>
 
+@interface ThreadDoneCondition : NSCondition 
+{
+@private
+    BOOL threadDone;
+}
+
+@property(assign) BOOL threadDone;
+
+@end
 
 @interface LockedThread : NSThread
 {
-    NSLock*             lock;
+    ThreadDoneCondition* doneCondition;
 }
 
-@property(readonly) NSLock* lock;
+@property(readonly) ThreadDoneCondition* doneCondition;
 
 @end
 

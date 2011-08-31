@@ -202,5 +202,35 @@
     return result;
 }
 
+// Detailed API method info - list of all methods in the batch.
+-(NSString*)apiMethodInfo
+{
+    if ([batchedApiMethods count] > 0)
+    {
+        NSMutableString* result = [NSMutableString stringWithString:apiMethod];
+        [result appendString:@": "];
+        BOOL firstChild = YES;
+        for (NSString* childMethod in batchedApiMethods) 
+        {
+            if (firstChild)
+            {
+                firstChild = NO;
+            }
+            else
+            {
+                [result appendString:@", "];
+            }
+            
+            [result appendString:childMethod];
+        }
+        
+        return result;
+    }
+    else
+    {
+        return [super apiMethodInfo];
+    }
+}
+
 
 @end

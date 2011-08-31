@@ -149,11 +149,12 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HyvesAPILayer);
     }
 }
 
+#define THREAD_STOP_TIMEOUT_SECONDS 5.0
+
 -(void)stopRunLoop
 {
     NSAssert([[NSThread currentThread] isEqual:apiThread], @"HyvesApiLayer: Can only stop the runloop on the api thread.");
     
-    [apiThread.lock lock];
     CFRunLoopStop(CFRunLoopGetCurrent());
 }
 
@@ -168,20 +169,43 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HyvesAPILayer);
         // Unblock the loader thread if it's blocked.
         NSLog(@"Stopping HyvesApiLayer thread...");
         
-        [self performSelector:@selector(stopRunLoop) onThread:apiThread withObject:nil waitUntilDone:YES];
+        [self performSelector:@selector(stopRunLoop) onThread:apiThread withObject:nil waitUntilDone:NO];
         
-        NSLock* threadDoneLock = [apiThread.lock retain];
+        BOOL timeOut = NO;
+        // This condition will be signalled in the dealloc of the thread object.
+        // This way we are sure that the thread is completely finished and removed.
+        ThreadDoneCondition* threadDoneCondition = [apiThread.doneCondition retain];
         
+        // Releasing the apiThread here does not automatically mean that it will be dealloc-ed because
+        // it's also retained by it's own runloop. The dealloc will happen when runloop itself is deleted.
         [apiThread release];
         
-        // This will block until the thread is deallocated.
-        [threadDoneLock lock];
+        // Wait for the thread's runloop to be deleted by the OS (after it has stopped).
+        [threadDoneCondition lock];
+        while (!threadDoneCondition.threadDone)
+        {
+            // The following statement will block until the condition is signalled or until the time-out occurs.
+            if (![threadDoneCondition waitUntilDate:[NSDate dateWithTimeInterval:THREAD_STOP_TIMEOUT_SECONDS sinceDate:[NSDate date]]])
+            {
+                // time-out.
+                timeOut = YES;
+                break;
+            }
+        }
+        [threadDoneCondition unlock];
         
-        [threadDoneLock unlock];
-        [threadDoneLock release];
-        threadDoneLock = nil;
+        [threadDoneCondition release];
+        threadDoneCondition = nil;
+        
+        if (timeOut)
+        {
+            NSLog(@"Timed out waiting for the API thread to finish!");
+        }
+        
         
         apiThread = nil;
+        
+        
     }
     
     NSLog(@"HyvesApiLayer thread stopped.");

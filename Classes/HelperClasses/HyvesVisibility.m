@@ -22,21 +22,6 @@
 #import "HyvesVisibility.h"
 
 
-
-/*
- VISIBILITY_NONE = 0,
- VISIBILITY_PRIVATE = 1,
- VISIBILITY_FRIEND = 2,
- VISIBILITY_HUB = 3, // same as VISIBILITY_GROUP
- VISIBILITY_PUBLIC = 4,                //hyvers
- VISIBILITY_SUPERPUBLIC = 5,            //everybody
- VISIBILITY_SPECIAL = 6,
- VISIBILITY_FRIENDS_OF_FRIENDS = 7,
- VISIBILITY_NETWORK = 8,
- VISIBILITY_FRIENDGROUP = 10,
- 
-*/ 
- 
 HyvesVisibility hyvesVisibilityFromString(const NSString* aVisibilityString)
 {
     if ([aVisibilityString isEqualToString:@"none"])

@@ -57,7 +57,7 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:[aShow boolValue]];
 }
 
-
+// Can only be executed on the API thread.
 -(void)startApiCall
 {
     @synchronized(self)
@@ -81,8 +81,53 @@
     }
 }
 
+-(void)stopApiCall
+{
+    // Redirect to the API thread if needed.
+    if (![[NSThread currentThread] isEqual:apiThread])
+    {
+        // Weird. The call will block even if the apiThread is nil.
+        // That's why we need an extra check.
+        if (apiThread != nil)
+        {
+            [self performSelector:@selector(stopApiCall) onThread:apiThread withObject:nil waitUntilDone:YES];
+        }
+        
+        return;
+    }
+
+    @synchronized(self)
+    {
+        [timer invalidate];
+        [timer release];
+        timer = nil;
+        
+        [apiCall release];
+        apiCall = nil;
+        
+        [connection cancel];
+        [connection release];
+        connection = nil;
+        
+        [receivedData release];
+        receivedData = nil;
+        
+        executing = NO;
+        canceled = NO;
+
+    }    
+}
+
+// Check if the error code indicates that the user's access token is no longer valid.
 -(BOOL)reAuthenticateNeeded:(NSError*)aError
 {
+    // Nasty hack around some incorrect server codes!
+    if (   ([apiMethod rangeOfString:@"create"].location != NSNotFound)
+        || ([apiMethod rangeOfString:@"send"].location != NSNotFound))
+    {
+        return NO;
+    }
+    
     NSInteger errorCode = [aError code];
     
     return (   (errorCode == API_ERROR_OAUTH_SIGNATURE_INVALID)
@@ -92,6 +137,7 @@
 }
 
 // Report API call results to the delegate.
+// Must be called on the caller thread!
 -(void)reportResults:(NSDictionary*)aResponse
 {
     @synchronized(self)
@@ -112,16 +158,20 @@
         NSError* error = [aResponse objectForKey:@"error"];
         if (error != nil)
         {
+            NSLog(@"API call %@ failed with error: [%d] %@", [self apiMethodInfo], [error code], [error localizedDescription]);
+            
             [delegate handleFailedAPICall:self error:error];
             BOOL reAuthenticationNeeded = [self reAuthenticateNeeded:error];
             if (reAuthenticationNeeded)
             {
                 NSLog(@"Re-authenticate triggered because of error: %@, code: %d", [error localizedDescription], [error code]);
-                [(NSObject*)[HyvesAPILayer sharedHyvesAPILayer].authenticator performSelectorOnMainThread:@selector(reAuthenticate) withObject:nil waitUntilDone:NO];
+                [(NSObject*)[HyvesAPILayer sharedHyvesAPILayer].authenticator performSelectorOnMainThread:@selector(reAuthenticate:) 
+                                                                                               withObject:[NSNumber numberWithBool:NO] waitUntilDone:NO];
             }
         }
         else
         {
+            // NSLog(@"API call %@ successful", [self apiMethodInfo]);
             NSDictionary* response = [aResponse objectForKey:@"response"];
             
             @try 
@@ -152,14 +202,15 @@
 
                 [delegate handleFailedAPICall:self error:error];
 
-                [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:apiMethod andErrorCode:[error code]];
+                [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:[self apiMethodInfo] andErrorCode:[error code]];
                 
                 [error release];
             }
         }
 
-        [(NSObject*)delegate release];
+        id<HyvesAPIResponse> delegateToRelease = delegate;
         delegate = nil;
+        [(NSObject*)delegateToRelease release];
         
         executing = NO;
         reportingResults = NO;
@@ -175,7 +226,6 @@
     {
         callerThread = [[NSThread currentThread] retain];
         
-        NSAssert(delegate != nil, @"HyvesAPICallHandler: execute called without a delegate");
         NSAssert(!executing, @"HyvesAPICallHandler: execute is called twice on HyvesAPICallHandler");
         executing = YES;
         
@@ -210,12 +260,15 @@
 {
     if (self = [super init])
     {
+        NSAssert(aDelegate != nil, @"HyvesAPICallHandler: created without a delegate");
+        NSAssert((theApiMethod != nil && [theApiMethod length] > 0), @"HyvesAPICallHandler: created with empty API method");
+        
         delegate = aDelegate;
         apiMethod = [theApiMethod retain];
         timeout = aTimeOut;
         apiThread = [HyvesAPILayer sharedHyvesAPILayer].apiThread;
         secure = aSecure;
-        parameters = [aParameters retain];
+        parameters = [aParameters mutableCopy];
         userData = [[NSMutableDictionary alloc] initWithCapacity:2];
     }
     return self;
@@ -233,8 +286,6 @@
                                delegate:aListener 
                                 timeout:DEFAULT_API_CALL_TIMEOUT];
 }
-
-
 
 // Called on the API thread.
 -(void)apiCallTimedOut
@@ -284,7 +335,7 @@
                                    withObject:[NSDictionary dictionaryWithObjectsAndKeys:error, @"error", nil]];
         }
     
-        [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:apiMethod andErrorCode:[error code]];
+        [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:[self apiMethodInfo] andErrorCode:[error code]];
         
         [error release];
     }
@@ -293,6 +344,7 @@
 // Cancel the API call.
 -(void)cancel
 {
+    id<HyvesAPIResponse> delegateToRelease = nil;
     @synchronized(self)
     {
         if (!executing)
@@ -300,50 +352,25 @@
             return;
         }
         
-        // It's too late to cancel!
+        // Be sure to set the delegate to nil before releasing.
+        // Releasing the delegate may cause cancel to be called again,
+        // so on second entry there won't be a double release of the delegate.
+        delegateToRelease = delegate;
+        delegate = nil;
+        
         if (reportingResults)
         {
+            // It's too late to really cancel because results are already being reported.
+            // The delegate will be released when reportResults is finished.
             return;
         }
-    
-        [(NSObject*)delegate release];
-        delegate = nil;
     }
     
-    // Redirect to the API thread if needed.
-    if (![[NSThread currentThread] isEqual:apiThread])
-    {
-        // Weird. The call will block even if the apiThread is nil.
-        // That's why we need an extra check.
-        if (apiThread != nil)
-        {
-            [self performSelector:@selector(cancel) onThread:apiThread withObject:nil waitUntilDone:YES];
-        }
-    }
-    else 
-    {
-        // Executed on the API thread.
-        @synchronized(self)
-        {
-            [timer invalidate];
-            [timer release];
-            timer = nil;
+    // This may block until the call is really canceled (on the API thread)
+    [self stopApiCall];
             
-            [apiCall release];
-            apiCall = nil;
-            
-            [connection cancel];
-            [connection release];
-            connection = nil;
-            
-            [receivedData release];
-            receivedData = nil;
-        
-            executing = NO;
-            canceled = NO;
-
-        }
-    }
+    // Not reporting results (yet). Release the delegate here.
+    [(NSObject*)delegateToRelease release];
 }
 
 
@@ -429,9 +456,67 @@
 
         }
 
-        [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:apiMethod andErrorCode:[error code]];
+        [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:[self apiMethodInfo] andErrorCode:[error code]];
 
     }
+}
+
+// Looks for error in the received response.
+// If the response is for a batched API call, the call as a whole may succeed, but the individual
+// calls within the batch may fail. In this case, only the top level (main) calls are searched.
+-(NSError*)findErrorInResponse:(NSDictionary*)aResponse
+{
+    NSError* foundError = nil;
+    NSDictionary* firstFoundErrorFragment = nil;
+    
+    if ([[aResponse valueForKey:@"method"] isEqualToString:@"error"])
+    {
+        firstFoundErrorFragment = aResponse;
+    }
+    else
+    {
+        id requestArray = [aResponse objectForKey:@"request"];
+        if (requestArray != nil && requestArray != [NSNull null])
+{
+            for (id currentRequestResponse in requestArray)
+    {
+                id errorResultDictionary = [currentRequestResponse objectForKey:@"error_result"];
+                if (errorResultDictionary != nil && errorResultDictionary != [NSNull null])
+        {
+                    firstFoundErrorFragment = errorResultDictionary;
+                    break;
+                }
+            }
+        }
+        }
+        
+    if (firstFoundErrorFragment != nil)
+        {
+            NSMutableDictionary* userInfo = [NSMutableDictionary dictionaryWithCapacity:10];
+        NSString* errorMessage = [firstFoundErrorFragment objectForKey:@"error_message"];
+            
+            [userInfo setObject:errorMessage forKey:NSLocalizedDescriptionKey];
+            
+            // No connection error, but an error returned by the API.
+        NSInteger errorCode = [[firstFoundErrorFragment objectForKey:@"error_code"] intValue];
+
+        id infoData = [firstFoundErrorFragment objectForKey:@"info"];
+        if (infoData != nil && infoData != [NSNull null] && [infoData isKindOfClass:[NSDictionary class]])
+            {
+                id timeDifferenceData = [infoData objectForKey:@"timestamp_difference"];
+                if (timeDifferenceData != nil && timeDifferenceData != [NSNull null])
+                {
+                    NSInteger timeDifference = [timeDifferenceData intValue];
+                // NSLog(@"Received time difference from the server: %d", timeDifference);
+                // NSLog(@"Setting new time difference to: %d + %d = %d", timeDifference, apiCall.appliedTimeDifference, timeDifference + apiCall.appliedTimeDifference);
+                [HyvesAPICall setTimeDifference:(timeDifference + apiCall.appliedTimeDifference)];
+            }
+                }
+        
+        foundError = [[[NSError alloc] initWithDomain:@"HyvesApi" code:errorCode userInfo:userInfo] autorelease];
+            }
+            
+    return foundError;
 }
 
 // Gets called on the apiThread runloop when connection finishes loading the data.
@@ -450,33 +535,12 @@
         NSError* error = nil;
         NSDictionary* response = [NSDictionary dictionaryWithJSONData:receivedData error:&error];
         
-        if ([receivedData length] == 0)
-        {
-            // int stop = 1;
-        }
+        // NSString* responseString = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
+        // NSLog(@"Received response for %@: %@", apiMethod, responseString);
         
-        if (error == nil && [[response valueForKey:@"method"] isEqualToString:@"error"])
+        if (error == nil)
         {
-            NSMutableDictionary* userInfo = [NSMutableDictionary dictionaryWithCapacity:10];
-            NSString* errorMessage = [response objectForKey:@"error_message"];
-            
-            [userInfo setObject:errorMessage forKey:NSLocalizedDescriptionKey];
-            
-            // No connection error, but an error returned by the API.
-            NSInteger errorCode = [[response objectForKey:@"error_code"] intValue];
-
-            id infoData = [response objectForKey:@"info"];
-            if (infoData != nil && infoData != [NSNull null])
-            {
-                id timeDifferenceData = [infoData objectForKey:@"timestamp_difference"];
-                if (timeDifferenceData != nil && timeDifferenceData != [NSNull null])
-                {
-                    NSInteger timeDifference = [timeDifferenceData intValue];
-                    [HyvesAPICall setTimeDifference:timeDifference];
-                }
-            }
-            
-            error = [[[NSError alloc] initWithDomain:@"HyvesApi" code:errorCode userInfo:userInfo] autorelease];
+            error = [self findErrorInResponse:response];
         }
         
         if ([HyvesAPILayer sharedHyvesAPILayer].showNetworkActivityInStatusBar)
@@ -513,7 +577,7 @@
     
         if (error != nil)
         {
-            [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:apiMethod andErrorCode:[error code]];
+            [[HyvesAPILayer sharedHyvesAPILayer] logFailedApiCallForMethod:[self apiMethodInfo] andErrorCode:[error code]];
         }
         
         [apiCall release];
@@ -653,6 +717,10 @@
     }
 }
 
+-(NSString*)apiMethodInfo
+{
+    return apiMethod;
+}
 
 
 

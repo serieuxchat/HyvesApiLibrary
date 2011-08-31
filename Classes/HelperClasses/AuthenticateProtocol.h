@@ -18,6 +18,6 @@
 //  THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 @protocol Authenticate <NSObject>
--(void)reAuthenticate;
+-(void)reAuthenticate:(NSNumber*)aUpgrade;
 @end
 

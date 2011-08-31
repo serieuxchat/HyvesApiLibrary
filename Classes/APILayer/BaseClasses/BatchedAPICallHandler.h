@@ -47,4 +47,7 @@
 // If there is no response data available, MalformedResponseException is thrown.
 -(id)getApiCallResponseForMethod:(NSString*)aApiMethod fromResponse:(NSDictionary*)aResponse error:(NSError**)aErrorPtr;
 
+// Detailed API method info - list of all methods in the batch.
+-(NSString*)apiMethodInfo;
+
 @end
