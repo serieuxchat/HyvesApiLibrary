@@ -226,7 +226,7 @@
             [authorizationDelegate oauthTokenReceived:oauthToken secret:oauthTokenSecret];
         }
         
-        NSString* authorizationUrlString = [NSString stringWithFormat:@"http://www.hyves.nl/mini/api/authorize/?oauth_token=%@&show_header=false", [oauthToken URLEncodedString]];
+        NSString* authorizationUrlString = [NSString stringWithFormat:@"http://www.hyves.nl/mini/api/authorize/?oauth_token=%@", [oauthToken URLEncodedString]];
         
         NSURL* authorizationUrl = [NSURL URLWithString:authorizationUrlString];
         

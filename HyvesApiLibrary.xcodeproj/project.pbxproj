@@ -451,7 +451,6 @@
 				GCC_PREFIX_HEADER = HyvesApiLibrary_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = HyvesApiLibrary;
-				SYMROOT = ../build;
 			};
 			name = Debug;
 		};
@@ -469,7 +468,6 @@
 				GCC_PREFIX_HEADER = HyvesApiLibrary_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = HyvesApiLibrary;
-				SYMROOT = ../build;
 			};
 			name = Release;
 		};
@@ -493,7 +491,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = ../build;
 			};
 			name = Debug;
 		};
@@ -510,7 +507,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SYMROOT = ../build;
 			};
 			name = Release;
 		};
@@ -526,7 +522,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SYMROOT = ../build;
 			};
 			name = "Distribution adhoc";
 		};
@@ -545,7 +540,6 @@
 				GCC_PREFIX_HEADER = HyvesApiLibrary_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = HyvesApiLibrary;
-				SYMROOT = ../build;
 			};
 			name = "Distribution adhoc";
 		};
@@ -561,7 +555,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SYMROOT = ../build;
 			};
 			name = "Distribution appstore";
 		};
@@ -580,7 +573,6 @@
 				GCC_PREFIX_HEADER = HyvesApiLibrary_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = HyvesApiLibrary;
-				SYMROOT = ../build;
 			};
 			name = "Distribution appstore";
 		};
