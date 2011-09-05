@@ -19,6 +19,12 @@ THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 =============================================================================================================
 
+HyvesApiLibrary makes it easier to use the Hyves API in iOS projects.
+For more information on the Hyves API, see: http://www.hyves-developers.nl/documentation/data-api/home
+
+
+
+
 1. Compiling the library
 
    In order to compile the library, you need to get the sources of TouchJSON from github:
