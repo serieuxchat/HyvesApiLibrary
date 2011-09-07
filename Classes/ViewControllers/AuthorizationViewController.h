@@ -28,6 +28,8 @@
 -(void)accessTokenReceived:(NSString*)aAcessToken secret:(NSString*)aSecret userId:(NSString*)aUserId expireDate:(NSDate*)aExpireDate;
 -(void)accessTokenFailedWithError:(NSError*)aError;
 
+-(void)authorizationCanceled;
+
 @optional
 
 -(void)oauthTokenReceived:(NSString*)aOauthToken secret:(NSString*)aSecret;
@@ -59,6 +61,8 @@
     
     BOOL                            loginStarted;
     BOOL                            loginCompleted;
+    
+    UIBarButtonItem*                cancelButtonItem;
 }
 
 @property(readonly)   UIWebView*                    webView;

@@ -89,21 +89,15 @@
     [super viewDidLoad];
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    //self.view.layer.masksToBounds = YES;
-    //self.view.layer.borderColor = [UIColor redColor].CGColor;
-    //self.view.layer.borderWidth = 3.0;
-    
     webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [webView setBackgroundColor:[UIColor whiteColor]];
-    // webView.layer.masksToBounds = YES;
-    // webView.layer.borderColor = [UIColor blueColor].CGColor;
-    // webView.layer.borderWidth = 3.0;
     
     [self.view addSubview:webView];
     webView.delegate = self;
-    
-    // [webView loadHTMLString:@"<html><body><p><center>Logging into Hyves...</center></p></body></html>" baseURL:nil];
+
+    cancelButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelPressed:)];
+    self.navigationItem.leftBarButtonItem = cancelButtonItem;
 }
 
 
@@ -136,6 +130,8 @@
     [authAccessTokenApiCallHandler release];
     requestTokenApiCallHandler = nil;
     
+    [cancelButtonItem release];
+    cancelButtonItem = nil;
     
     [webView release];
     webView = nil;
@@ -286,5 +282,9 @@
     
 }    
 
+-(void)cancelPressed:(id)aSender
+{
+    [authorizationDelegate authorizationCanceled];
+}
 
 @end
